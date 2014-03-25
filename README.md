@@ -21,6 +21,12 @@ Community Bookstore will use the whole areas available in the Drupal broad spect
 These are the wireframes, but they are not set in stone. Contributors will be able to evaluate, pitch in and impact the project, allowing them to decide changes in the features.
 
 ![alt tag](https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/community-bookstore.png)
+.. image:: https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/community-bookstore.png
+    :alt: HTTPie compared to cURL
+    :width: 400
+    :height: 300
+    :align: center
+
 
 ![alt tag](https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/User-details.png)
 
