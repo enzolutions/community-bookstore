@@ -20,10 +20,10 @@ Community Bookstore will use the whole areas available in the Drupal broad spect
 #What will the Community Bookstore look like?
 These are the wireframes, but they are not set in stone. Contributors will be able to evaluate, pitch in and impact the project, allowing them to decide changes in the features.
 
-<img alt="community-bookstore" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/community-bookstore.png" height="300px" />
+<img alt="community-bookstore" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/community-bookstore.png" height="100px" />
 
-<img alt="User-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/User-details.png" height="300px" />
+<img alt="User-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/User-details.png" height="100px" />
 
-<img alt="Book-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/Book-details.png" height="300px" />
+<img alt="Book-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/Book-details.png" height="100px" />
 
-<img alt="search_results" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/search_results.png" height="300px" />
+<img alt="search_results" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/search_results.png" height="100px" />
