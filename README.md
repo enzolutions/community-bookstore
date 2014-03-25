@@ -24,8 +24,6 @@ These are the wireframes, but they are not set in stone. Contributors will be ab
 
 <img alt="User-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/User-details.png" height="300px" />
 
-![alt tag]()
 <img alt="Book-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/Book-details.png" height="300px" />
 
-![alt tag]()
 <img alt="search_results" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/search_results.png" height="300px" />
