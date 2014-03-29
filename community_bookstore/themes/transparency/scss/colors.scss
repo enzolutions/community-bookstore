@@ -1,0 +1,35 @@
+/*here will be ONLY the pallete colors*/
+$body-background:#444444;
+$content-background:#efefef;
+$mainmenu-background: #001c07;
+$mainmenu-border: #008C23;
+$mainmenu-shadow: #c0e1ec;
+$mainmenu-color: #FFFFFF;
+$mainmenu-color-hover: #001c07;
+$mainmenu-background-hover: #FFFFFF;
+$gradiant-ini: #CCCCCC;
+$gradiant-fin: #FFFFFF;
+$block-green: #59b200;
+$block-green-border: #008322;
+$block-green-color: #FFFFFF;
+$block-search: #043467;
+$block-search-border: #022952;
+$block-helper: #205b78;
+$block-helper-border: #03323c;
+$font-color: #000;
+$footer-bg:#aaaaaa;
+$footer-border:#444444;
+$footer-links:#aeafad;
+$candidates-block-bg:#aaaaaa;
+$candidates-block-border:#444444;
+$candidates-block-links:#aeafad;
+@mixin background-page {
+background: $gradiant-ini; /* Old browsers */
+background: -moz-linear-gradient(top,  $gradiant-ini 0%, $gradiant-fin 65%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gradiant-ini), color-stop(65%,$gradiant-fin)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  $gradiant-ini 0%,$gradiant-fin 65%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  $gradiant-ini 0%,$gradiant-fin 65%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  $gradiant-ini 0%,$gradiant-fin 65%); /* IE10+ */
+background: linear-gradient(to bottom,  $gradiant-ini 0%,$gradiant-fin 65%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}

@@ -1,0 +1,10 @@
+name = Security Review
+description = "Site security and configuration review module."
+core = 7.x
+
+; Information added by drupal.org packaging script on 2011-11-29
+version = "7.x-1.0"
+core = "7.x"
+project = "security_review"
+datestamp = "1322606446"
+

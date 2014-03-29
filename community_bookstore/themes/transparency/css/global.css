@@ -1,0 +1,181 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/*here will be ONLY the pallete colors*/
+/* line 4, ../scss/global.scss */
+body {
+  background: #444444;
+}
+
+/* line 8, ../scss/global.scss */
+#section-header, #section-content {
+  background: #efefef;
+}
+
+/*Text*/
+/* line 12, ../scss/global.scss */
+h1 {
+  line-height: 36px;
+}
+
+/* line 17, ../scss/global.scss */
+button, input[type="reset"], input[type="submit"], input[type="button"], a {
+  border-radius: 0px;
+}
+
+/* line 20, ../scss/global.scss */
+.node-links ul li a, .comment-links ul li a {
+  border-radius: 0px;
+}
+
+/* line 24, ../scss/global.scss */
+.region {
+  min-height: 1px;
+}
+
+/* line 41, ../scss/global.scss */
+.candidates .views-row .group-right {
+  width: 270px;
+}
+
+/* line 46, ../scss/global.scss */
+#zone-branding {
+  padding-top: 20px;
+}
+
+/* line 49, ../scss/global.scss */
+.branding-data {
+  float: left;
+}
+/* line 51, ../scss/global.scss */
+.branding-data .site-name-slogan {
+  margin: 0px;
+}
+
+/* View overrides*/
+/* line 56, ../scss/global.scss */
+.views-exposed-widgets {
+  margin-bottom: 20px;
+}
+
+/* line 61, ../scss/global.scss */
+.views-exposed-form .views-exposed-widget {
+  padding: 0px;
+}
+/* line 63, ../scss/global.scss */
+.views-exposed-form .views-exposed-widget label {
+  float: left;
+}
+/* line 66, ../scss/global.scss */
+.views-exposed-form .views-exposed-widget .views-widget {
+  float: left;
+  padding-left: 15px;
+}
+/* line 72, ../scss/global.scss */
+.views-exposed-form .views-submit-button {
+  padding-left: 15px;
+}
+/* line 74, ../scss/global.scss */
+.views-exposed-form .views-submit-button .form-submit {
+  margin: 0px;
+}
+
+/****************Block Search******************/
+/* line 82, ../scss/global.scss */
+.block-search {
+  float: right;
+  margin-top: 15px;
+}
+/* line 85, ../scss/global.scss */
+.block-search .content {
+  padding: 10px 0;
+}
+/* line 87, ../scss/global.scss */
+.block-search .content input[type="submit"] {
+  border: none;
+  color: white;
+  background: #022952;
+  border-radius: 0px;
+  text-shadow: none;
+}
+
+/****************Block Candidate party******************/
+/* line 98, ../scss/global.scss */
+#block-views-candidates-of-party-block-1 {
+  margin-top: 30px;
+}
+/* line 100, ../scss/global.scss */
+#block-views-candidates-of-party-block-1 .content {
+  padding: 10px;
+  background: #aaaaaa;
+  border-bottom: 4px solid #444444;
+  color: white;
+}
+/* line 105, ../scss/global.scss */
+#block-views-candidates-of-party-block-1 .content a {
+  color: white;
+}
+
+/****************Block OP Helper******************/
+/* line 113, ../scss/global.scss */
+.block-open-politic-helper.block-powered-by .content {
+  border-bottom: none;
+  background: none;
+}
+/* line 119, ../scss/global.scss */
+.block-open-politic-helper.block-open-politic-helper-contributor-menu-popup .content {
+  border-bottom: none;
+  background: none;
+  color: black;
+}
+/* line 125, ../scss/global.scss */
+.block-open-politic-helper .content {
+  color: white;
+  background: #205b78;
+  border-bottom: 4px solid #03323c;
+}
+/* line 126, ../scss/global.scss */
+.block-open-politic-helper .content a {
+  color: white;
+}
+/* line 132, ../scss/global.scss */
+.block-open-politic-helper .content input[type="submit"] {
+  border: none;
+  color: white;
+  background: #03323c;
+  border-radius: 0px;
+  text-shadow: none;
+}
+
+/* line 142, ../scss/global.scss */
+#block-system-main {
+  margin-bottom: 20px;
+}
+
+/* line 145, ../scss/global.scss */
+.breadcrumb {
+  padding-bottom: 10px;
+}
+
+/****************Page Node******************/
+/* line 151, ../scss/global.scss */
+.page-node .node .content {
+  background: white;
+  padding: 15px;
+  border-bottom: 2px solid #ababab;
+}
+
+/**************Footer ************/
+/* line 159, ../scss/global.scss */
+#zone-footer-wrapper {
+  border-top: 4px solid #022952;
+  padding-top: 20px;
+}
+
+/* line 163, ../scss/global.scss */
+#zone-footer {
+  color: white;
+}
+/* line 165, ../scss/global.scss */
+#zone-footer a {
+  color: #aeafad;
+}

@@ -1,0 +1,169 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import "colors";
+body{
+  background:$body-background;
+}
+
+#section-header, #section-content{
+  background:$content-background;
+}
+/*Text*/
+h1{
+  line-height:36px;
+}
+
+//Inputs buttons
+button, input[type="reset"], input[type="submit"], input[type="button"] ,a{
+  border-radius: 0px;
+}
+.node-links ul li a, .comment-links ul li a {
+    border-radius: 0px;
+}
+ //fix to force render region
+.region{
+    min-height: 1px;
+}
+
+.candidates {
+  .views-row {
+
+    &.views-row-odd{
+
+    }
+    &.views-row-even {
+
+    }
+    .group-left {
+
+
+    }
+    .group-right {
+    width: 270px;
+    }
+  }
+}
+#zone-branding{
+  padding-top:20px;
+}
+.branding-data{
+    float: left;
+    .site-name-slogan{
+        margin:0px;
+    }
+}
+/* View overrides*/
+.views-exposed-widgets{
+  margin-bottom:20px;
+}
+.views-exposed-form {
+  
+  .views-exposed-widget{
+    padding:0px;
+    label{
+      float:left;
+    }
+    .views-widget{
+      float:left;
+      padding-left:15px;
+    }
+    
+  }
+  .views-submit-button{
+    padding-left:15px;
+    .form-submit{
+      margin:0px;
+    }
+  }
+  
+}
+
+/****************Block Search******************/
+.block-search{
+    float: right;
+    margin-top: 15px;
+    .content{
+        padding:10px 0;
+        input[type="submit"]{
+            border: none;
+            color: white;
+            background: $block-search-border;
+            border-radius:0px;
+            text-shadow: none;
+            //@include border-radius(0px);
+        }
+    }
+}
+/****************Block Candidate party******************/
+#block-views-candidates-of-party-block-1{
+    margin-top: 30px;
+    .content{
+        padding:10px;
+        background: $candidates-block-bg;
+        border-bottom: 4px solid $candidates-block-border;
+        color: white;
+        a{
+            color: white;
+        }
+    }
+}
+/****************Block OP Helper******************/
+.block-open-politic-helper{
+    &.block-powered-by{
+        .content{
+            border-bottom:none;
+            background: none;
+        }
+            }
+    &.block-open-politic-helper-contributor-menu-popup{
+        .content{
+            border-bottom:none;
+            background: none;
+            color: $font-color;
+        }
+    }
+    .content{
+        a{
+            color: white;
+        }
+        color: white;
+        background: $block-helper;
+        border-bottom: 4px solid $block-helper-border;
+        input[type="submit"]{
+            border: none;
+            color: white;
+            background: $block-helper-border;
+            border-radius:0px;
+            text-shadow: none;
+            //@include border-radius(0px);
+        }
+    }
+}
+#block-system-main{
+  margin-bottom:20px;
+}
+.breadcrumb{
+  padding-bottom:10px;
+}
+/****************Page Node******************/
+ .page-node{
+    .node{
+        .content{
+            background: white;
+            padding: 15px;
+            border-bottom: 2px solid #ababab;
+        }
+    }
+}
+/**************Footer ************/
+#zone-footer-wrapper{
+    border-top: 4px solid $block-search-border;
+    padding-top:20px;
+}
+#zone-footer{
+    color: white;
+    a{
+        color:$footer-links;
+
+    }
+}

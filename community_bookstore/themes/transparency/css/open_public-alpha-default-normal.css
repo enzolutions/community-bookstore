@@ -1,0 +1,228 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+/*here will be ONLY the pallete colors*/
+/* line 6, ../scss/open_public-alpha-default-normal.scss */
+a:link {
+  text-decoration: none;
+}
+/* line 8, ../scss/open_public-alpha-default-normal.scss */
+a:link:hover {
+  text-decoration: underline;
+}
+
+/* line 19, ../scss/open_public-alpha-default-normal.scss */
+#region-sidebar-second h2.block-title {
+  font-style: italic;
+  padding-left: 15px;
+}
+/* line 23, ../scss/open_public-alpha-default-normal.scss */
+#region-sidebar-second .block {
+  margin-bottom: 20px;
+}
+/* line 25, ../scss/open_public-alpha-default-normal.scss */
+#region-sidebar-second .block .content {
+  padding: 10px 10px 10px 15px;
+}
+
+/* line 30, ../scss/open_public-alpha-default-normal.scss */
+.logo-img {
+  margin: 0px;
+  padding: 0 20px;
+}
+
+/* line 34, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu {
+  margin-bottom: 20px;
+}
+/* line 36, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block {
+  background: #001c07;
+  border-bottom: 4px solid #008c23;
+  box-shadow: 0px -8px 12px 0px #c0e1ec;
+}
+/* line 40, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block ul {
+  overflow: hidden;
+}
+/* line 42, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+  border-left: 1px solid white;
+  margin: 0px -2px;
+}
+/* line 48, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block ul li.first {
+  border-left: none;
+}
+/* line 51, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block ul li:hover {
+  background: white;
+}
+/* line 53, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block ul li:hover a {
+  color: #001c07;
+  text-decoration: none;
+}
+/* line 58, ../scss/open_public-alpha-default-normal.scss */
+#zone-menu .main-menu-block ul li a {
+  color: white;
+  padding: 5px;
+}
+
+/* line 66, ../scss/open_public-alpha-default-normal.scss */
+.select-language {
+  float: right;
+  margin-top: 20px;
+}
+/* line 69, ../scss/open_public-alpha-default-normal.scss */
+.select-language ul {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+/* line 72, ../scss/open_public-alpha-default-normal.scss */
+.select-language ul li {
+  list-style: none;
+  float: left;
+  margin: 10px 0px 10px 10px;
+}
+/* line 76, ../scss/open_public-alpha-default-normal.scss */
+.select-language ul li a {
+  text-indent: -9999px;
+  display: block;
+  width: 16px;
+  height: 12px;
+}
+/* line 81, ../scss/open_public-alpha-default-normal.scss */
+.select-language ul li a img {
+  float: right;
+}
+
+/* line 90, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content {
+  background: #59b200;
+  border-bottom: 4px solid #008322;
+}
+/* line 93, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content label, .sing-in-block .content a {
+  color: white;
+}
+/* line 97, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content h3 {
+  display: none;
+}
+/* line 103, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content .item-list ul li {
+  margin: 0;
+}
+/* line 107, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content .item-list .hybridauth-widget {
+  float: right;
+}
+/* line 109, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content .item-list .hybridauth-widget li {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
+/* line 113, ../scss/open_public-alpha-default-normal.scss */
+.sing-in-block .content .item-list .hybridauth-widget li span {
+  background-size: 30px;
+}
+
+/* line 122, ../scss/open_public-alpha-default-normal.scss */
+.candidates-page .views-row {
+  background: #fff;
+  border-bottom: 2px solid #ababab;
+  padding: 10px;
+  margin-bottom: 20px;
+  /*&.views-row-odd{
+    background: #FFF;
+  }
+  &.views-row-even {
+    background: #eee;
+  }*/
+}
+/* line 134, ../scss/open_public-alpha-default-normal.scss */
+.candidates-page .views-row .group-left {
+  margin-right: 15px;
+  width: 100px;
+}
+/* line 138, ../scss/open_public-alpha-default-normal.scss */
+.candidates-page .views-row .group-right {
+  width: auto;
+}
+/* line 141, ../scss/open_public-alpha-default-normal.scss */
+.candidates-page .views-row .group-right .field-name-title h2 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  line-height: 26px;
+  padding-top: 7px;
+}
+/* line 148, ../scss/open_public-alpha-default-normal.scss */
+.candidates-page .views-row .group-right .field-name-node-link {
+  float: right;
+}
+
+/* line 155, ../scss/open_public-alpha-default-normal.scss */
+.view-parties .views-row {
+  background: #fff;
+  border-bottom: 2px solid #ababab;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+/* line 161, ../scss/open_public-alpha-default-normal.scss */
+.view-parties .views-field {
+  float: left;
+  word-wrap: break-word;
+}
+/* line 164, ../scss/open_public-alpha-default-normal.scss */
+.view-parties .views-field .field-content {
+  line-height: normal;
+}
+/* line 168, ../scss/open_public-alpha-default-normal.scss */
+.view-parties .views-field-title {
+  width: 20%;
+}
+/* line 171, ../scss/open_public-alpha-default-normal.scss */
+.view-parties .views-field-field-website {
+  width: 55%;
+}
+/* line 174, ../scss/open_public-alpha-default-normal.scss */
+.view-parties .views-field-field-logo {
+  width: 25%;
+  float: right;
+  text-align: right;
+}
+
+/********************************Node Type Candidate***********************************/
+/* line 184, ../scss/open_public-alpha-default-normal.scss */
+.node-type-candidate .region-content .content .group-left {
+  width: 30%;
+}
+/* line 187, ../scss/open_public-alpha-default-normal.scss */
+.node-type-candidate .region-content .content .group-right {
+  width: 69%;
+  padding-left: 5px;
+}
+/* line 190, ../scss/open_public-alpha-default-normal.scss */
+.node-type-candidate .region-content .content .group-right .field-name-share-this {
+  float: right;
+}
+
+/********************************Node Type Candidate***********************************/
+/* line 201, ../scss/open_public-alpha-default-normal.scss */
+.node-type-party .region-content .content .group-left {
+  width: 30%;
+}
+/* line 204, ../scss/open_public-alpha-default-normal.scss */
+.node-type-party .region-content .content .group-right {
+  width: 69%;
+  padding-left: 5px;
+}
+/* line 207, ../scss/open_public-alpha-default-normal.scss */
+.node-type-party .region-content .content .group-right .field-name-share-this {
+  float: right;
+}

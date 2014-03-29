@@ -1,0 +1,213 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+@import "colors";
+
+a:link{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+#zone-header {
+  
+}
+#zone-content {
+
+}
+#region-sidebar-second {
+  h2.block-title{
+    font-style: italic;
+    padding-left: 15px;
+  }
+  .block {
+    margin-bottom: 20px;
+    .content{
+      padding: 10px 10px 10px 15px;
+    }
+  }
+}
+.logo-img {
+  margin:0px;
+  padding:0 20px
+}
+#zone-menu{
+  margin-bottom:20px;
+  .main-menu-block{
+    background: $mainmenu-background;
+    border-bottom: 4px solid $mainmenu-border;
+    box-shadow: 0px -8px 12px 0px $mainmenu-shadow;
+  ul{
+    overflow: hidden;
+    li{
+      list-style: none;
+      display: inline-block;;
+      padding: 10px 10px;
+      border-left: 1px solid white;
+      margin: 0px -2px;
+      &.first{
+        border-left: none;
+      }
+      &:hover{
+        background: $mainmenu-background-hover;
+        a{
+          color: $mainmenu-color-hover;
+          text-decoration:none;
+        }
+      }
+      a {
+        color: $mainmenu-color;
+        padding: 5px;
+      }
+    }
+  }
+}
+}
+.select-language {
+  float: right;
+  margin-top:20px;
+  ul {
+    overflow: hidden;
+    margin-bottom: 0;
+    li{
+      list-style: none;
+      float: left;
+      margin: 10px 0px 10px 10px;
+      a{
+       text-indent: -9999px;
+        display: block;
+        width: 16px;
+        height: 12px;
+        img{
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.sing-in-block {
+  .content {
+    background: $block-green;
+    border-bottom: 4px solid $block-green-border;
+    label, a {
+      color: $block-green-color;
+
+    }
+    h3 {
+      display: none;
+    }
+
+    .item-list{
+      ul {
+        li {
+          margin: 0;
+        }
+      }
+      .hybridauth-widget{
+      float: right;
+      li {
+        height: 30px;
+        width: 30px;
+        margin: 0 5px;
+        span {
+          background-size: 30px;
+        }
+      }
+    }
+    }
+  }
+}
+.candidates-page{
+  .views-row {
+    background: #fff;
+    border-bottom: 2px solid #ababab;
+    padding: 10px;
+    margin-bottom:20px;
+    //margin: 10px 0;
+    /*&.views-row-odd{
+      background: #FFF;
+    }
+    &.views-row-even {
+      background: #eee;
+    }*/
+    .group-left {
+      margin-right: 15px;
+      width: 100px;
+    }
+    .group-right {
+      width: auto;
+      .field-name-title {
+        h2 {
+          margin-bottom: 5px;
+          font-size: 22px;
+          line-height: 26px;
+          padding-top: 7px;
+        }
+      }
+      .field-name-node-link {
+        float: right;
+      }
+    }
+  }
+}
+.view-parties{
+  .views-row {
+    background: #fff;
+    border-bottom: 2px solid #ababab;
+    margin-bottom:20px;
+    padding:10px;
+  }
+  .views-field{
+    float:left;
+    word-wrap: break-word;
+    .field-content{
+       line-height:normal;
+    }
+  }
+  .views-field-title{
+    width:20%;
+  }
+  .views-field-field-website{
+    width:55%;
+  }
+  .views-field-field-logo{
+    width:25%;
+    float:right;
+    text-align:right;
+  }
+}
+/********************************Node Type Candidate***********************************/
+.node-type-candidate{
+  .region-content{
+    .content{
+      .group-left{
+        width: 30%;
+      }
+      .group-right{
+        width: 69%;
+        padding-left:5px;
+        .field-name-share-this{
+          float: right;
+        }
+      }
+    }
+  }
+}
+/********************************Node Type Candidate***********************************/
+.node-type-party{
+  .region-content{
+    .content{
+      .group-left{
+        width: 30%;
+      }
+      .group-right{
+        width: 69%;
+        padding-left:5px;
+        .field-name-share-this{
+          float: right;
+        }
+      }
+    }
+  }
+}
