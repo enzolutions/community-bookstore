@@ -21,7 +21,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 #What is the Community Bookstore?
-It is an initiative to build a final product for the community by the community to resolve a very specific problem: access **to knowledge**.
+It is an initiative to build a final product for the community by the community to resolve a very specific problem: access to **knowledge**.
 
 From technical perspective this project is Headless Drupal system using MarionetteJS as FrontEnd.
 

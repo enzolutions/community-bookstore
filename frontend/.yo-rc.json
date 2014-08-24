@@ -1,0 +1,9 @@
+{
+  "generator-marionette-drupal": {
+    "appDirectory": "web",
+    "bowerDirectory": "vendor",
+    "templatesDirectory": "web/templates",
+    "modelsDirectory": "web/models",
+    "collectionsDirectory": "web/collections"
+  }
+}
