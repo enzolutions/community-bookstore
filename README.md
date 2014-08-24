@@ -1,13 +1,13 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents**
 
 - [What is the Community Bookstore?](#what-is-the-community-bookstore)
 - [What are the objectives of Community Bookstore?](#what-are-the-objectives-of-community-bookstore)
 - [What skills I need to Contribute?](#what-skills-i-need-to-contribute)
 - [What will the Community Bookstore look like?](#what-will-the-community-bookstore-look-like)
 - [Install](#install)
-  - [Pre requirements](#pre-requirements)
+  - [Requirements](#requirements)
   - [Assumptions](#assumptions)
   - [Getting Community Bookstore project](#getting-community-bookstore-project)
   - [Installing Backend](#installing-backend)
@@ -21,20 +21,26 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 #What is the Community Bookstore?
-It is an initiative to build a final product for the community by the community. A Drupal Distribution using Backbone.js to resolve a very specific problem: access to knowledge.
+It is an initiative to build a final product for the community by the community to resolve a very specific problem: access **to knowledge**.
+
+From technical perspective this project is Headless Drupal system using MarionetteJS as FrontEnd.
 
 #What are the objectives of Community Bookstore?
 Provide a website to enable people to exchange books for a price or for free (depending of the good karma of seller or donors).
 
 The tool will work best for instance for a parent with kids from K - 12 Schools or college students all the way through their undergrad and post doctorate.
 
-The website will have a high impact in the community in areas like:
+*The website will have a high impact in the community in areas like:
 
-Ecology (Less books printed, more books reused and more books recycled at their end of life)
-Knowledge (Enable to share education for free or a reduced price)
-Economy (Less moeny is required to buy books, this money could be invested in other areas like clothing or food)
-How I can contribute?
-Subcribe to DrupalCamp CR 2013 and send an email to camp@drupalcr.org informing us that you want to be part of this event.
+* **Ecology**: Less books printed, more books reused and more books recycled at their end of life.
+
+* **Knowledge**: Enable to share education for free or a reduced price.
+
+* **Economy**: Less money is required to buy books, this money could be invested in other areas like clothing or food.
+
+#How I can contribute?
+
+Review the Issue queue and try to resolve one of them, when you finish send us a Pull Request
 
 #What skills I need to Contribute?
 Community Bookstore will use the whole areas available in the Drupal broad spectrum of skills, and we expect the percentaje of effort will be distributed in the following way.
@@ -46,7 +52,7 @@ These are the wireframes, but they are not set in stone. Contributors will be ab
 
 #Install
 
-##Pre requirements
+##Requirements
 
 * Drush 7 (https://drupalize.me/blog/201408/upgrading-drush-work-drupal-8)
 
@@ -107,7 +113,7 @@ The Configuration Management only allow sync configuration between same site or 
 You cat get your current site UUDI executing the following command
 
 ```
-$ drush7 cget system.site
+$ drush cget system.site
 ```
 
 The config import has a diffent UUID you can confirm with the following command
@@ -119,7 +125,7 @@ $ cat ~/back2school/backend/sites/default/config/staging/system.site.yml
 You need to change the value using the following command
 
 ```
-$drush7 cedit system.site
+$ drush cedit system.site
 ```
 
 Using your favorite text editor you need set the same UUID present in staging config files.
@@ -135,11 +141,11 @@ $ sudo chmod -R 755 ~/back2school/backend/sites/default/config/staging/
 
 Now with access to config files we have to option to import/sync the files
 
-*Web enable*
+**Web enable**
 
 Accessing the URL http://backend.com/admin/config/development/configuration you can review the files and import all changes
 
-*Drush enable*
+**Drush enable**
 
 ```
 $ drush config-import staging
