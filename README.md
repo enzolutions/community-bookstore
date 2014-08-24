@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [What is the Community Bookstore?](#what-is-the-community-bookstore)
+- [What are the objectives of Community Bookstore?](#what-are-the-objectives-of-community-bookstore)
+- [What skills I need to Contribute?](#what-skills-i-need-to-contribute)
+- [What will the Community Bookstore look like?](#what-will-the-community-bookstore-look-like)
+- [Install](#install)
+  - [Pre requirements](#pre-requirements)
+  - [Assumptions](#assumptions)
+  - [Getting Community Bookstore project](#getting-community-bookstore-project)
+  - [Installing Backend](#installing-backend)
+    - [Install Drupal 8](#install-drupal-8)
+      - [Sync configuration](#sync-configuration)
+        - [Configure sync dirs](#configure-sync-dirs)
+        - [Symlink to community bookstore config](#symlink-to-community-bookstore-config)
+        - [Force Site UUID match](#force-site-uuid-match)
+        - [Sync configuration](#sync-configuration-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 #What is the Community Bookstore?
 It is an initiative to build a final product for the community by the community. A Drupal Distribution using Backbone.js to resolve a very specific problem: access to knowledge.
 
