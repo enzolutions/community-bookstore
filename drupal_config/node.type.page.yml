@@ -1,0 +1,14 @@
+uuid: 87f13faf-fdcb-47a1-9200-ce41f895a056
+langcode: en
+status: true
+dependencies: {  }
+name: 'Basic page'
+type: page
+description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+help: ''
+settings:
+  node:
+    options:
+      revision: false
+    preview: 1
+    submitted: false

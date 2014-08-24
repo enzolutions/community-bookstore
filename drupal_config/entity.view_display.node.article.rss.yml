@@ -1,0 +1,23 @@
+uuid: cef79667-f7bc-4661-b14c-7639bb39458d
+langcode: en
+status: true
+dependencies:
+  entity:
+    - entity.view_mode.node.rss
+    - field.instance.node.article.body
+    - field.instance.node.article.comment
+    - field.instance.node.article.field_image
+    - field.instance.node.article.field_tags
+    - node.type.article
+id: node.article.rss
+label: null
+targetEntityType: node
+bundle: article
+mode: rss
+content: {  }
+hidden:
+  langcode: true
+  body: true
+  comment: true
+  field_image: true
+  field_tags: true

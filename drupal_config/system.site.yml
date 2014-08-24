@@ -1,0 +1,11 @@
+uuid: 1365c26d-6d9f-430e-9d08-8f1799f530bd
+name: 'Community Bookstore'
+mail: enzo@enzolutions.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en

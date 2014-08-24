@@ -1,0 +1,19 @@
+uuid: 31a635e2-3f46-4fed-a507-7d5eee6f541e
+langcode: en
+status: true
+dependencies:
+  entity:
+    - breakpoint.breakpoint.theme.bartik.mobile
+    - breakpoint.breakpoint.theme.bartik.narrow
+    - breakpoint.breakpoint.theme.bartik.wide
+  theme:
+    - bartik
+id: theme.bartik.bartik
+label: Bartik
+name: bartik
+breakpoint_ids:
+  - theme.bartik.mobile
+  - theme.bartik.narrow
+  - theme.bartik.wide
+source: bartik
+sourceType: theme

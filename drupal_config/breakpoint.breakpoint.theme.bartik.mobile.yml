@@ -1,0 +1,15 @@
+uuid: aeeab5d6-aa3b-4d06-af00-d46ca62a3b21
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+id: theme.bartik.mobile
+label: mobile
+name: mobile
+mediaQuery: '(min-width: 0px)'
+source: bartik
+sourceType: theme
+weight: 0
+multipliers:
+  1x: 1x

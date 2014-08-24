@@ -1,0 +1,14 @@
+uuid: 71783a94-7042-45f4-9008-8c8565201ac0
+langcode: en
+status: true
+dependencies: {  }
+name: Book
+type: book
+description: 'Entity to store books information'
+help: ''
+settings:
+  node:
+    preview: 0
+    submitted: true
+    options:
+      revision: false

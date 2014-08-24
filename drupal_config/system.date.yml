@@ -1,0 +1,9 @@
+country:
+  default: CR
+first_day: 0
+timezone:
+  default: America/Costa_Rica
+  user:
+    configurable: true
+    warn: false
+    default: 0

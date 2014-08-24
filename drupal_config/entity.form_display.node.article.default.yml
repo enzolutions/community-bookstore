@@ -1,0 +1,59 @@
+uuid: cb38a537-7ce9-45f6-9000-eebdcc7f4b1b
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.instance.node.article.body
+    - field.instance.node.article.comment
+    - field.instance.node.article.field_image
+    - field.instance.node.article.field_tags
+    - node.type.article
+  module:
+    - comment
+    - image
+    - path
+    - taxonomy
+    - text
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  title:
+    type: string
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_tags:
+    type: taxonomy_autocomplete
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

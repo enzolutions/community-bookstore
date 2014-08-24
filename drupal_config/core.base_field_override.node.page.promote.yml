@@ -1,0 +1,20 @@
+uuid: f1d49285-36e1-479b-9000-f5a0922e6488
+langcode: en
+status: true
+dependencies:
+  entity:
+    - node.type.page
+id: node.page.promote
+field_name: promote
+entity_type: node
+bundle: page
+label: Promote
+description: 'A boolean indicating whether the node should be displayed on the front page.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_function: ''
+settings: {  }
+field_type: boolean

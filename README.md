@@ -22,4 +22,110 @@ These are the wireframes, but they are not set in stone. Contributors will be ab
 
 <img alt="community-bookstore" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/community-bookstore.png" height="100px" /><img alt="Book-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/Book-details.png" height="100px" /><img alt="search_results" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/search_results.png" height="100px" /><img alt="User-details" src="https://raw.githubusercontent.com/enzolutions/community-bookstore/master/images/User-details.png" height="100px" />
 
+#Install
+
+##Pre requirements
+
+* Drush 7 (https://drupalize.me/blog/201408/upgrading-drush-work-drupal-8)
+
+##Assumptions
+
+We will assume we will have a root folder name ~/back2school to allocate backend and frontend files for Community Bookstore, this is just for convinience to write the instructions but off course is not required.
+
+We will have to domains/virtualhost configured in this way
+
+* http://backend.com -> ~/back2school/backend
+* http://frontend.com -> ~/back2school/frontend
+
+You have use the webserver of you preference, but we tested with Apache 2
+
+##Getting Community Bookstore project
+
+```
+git clone https://github.com/enzolutions/community-bookstore.git ~/back2school
+```
+
+##Installing Backend
+
+### Install Drupal 8
+
+At this point is requiered to get Drupal 8 from git, this procces could take a lit bit depending your internet connection.
+
+```
+git clone --branch 8.0.x http://git.drupal.org/project/drupal.git ~/back2school/backend
+```
+
+You must to follow the regular process to install a Drupal 8 site.
+
+#### Sync configuration
+
+After complete the Drupal 8 Installation,you must to load the configruation for Community Booksstore
+
+##### Configure sync dirs
+
+Editing you settings.php you must setup where will be located your config directories for active and staging, as you can see below
+
+```
+$config_directories['staging'] = 'sites/default/config/staging';
+```
+
+This configuration is at the end of your setting file, using a ramdom directory created in install process.
+
+##### Symlink to community bookstore config
+
+```
+$ mkdir ~/back2school/backend/sites/default/config
+$ ln -s ~/back2school/drupal_config ~/back2school/backend/sites/default/config/staging
+```
+
+##### Force Site UUID match
+
+The Configuration Management only allow sync configuration between same site or project to avoid issues importing configuration from site a.com to b.com, to accomplish this validation Drupal 8 generate a UUID for each site.
+
+You cat get your current site UUDI executing the following command
+
+```
+$ drush7 cget system.site
+```
+
+The config import has a diffent UUID you can confirm with the following command
+
+```
+$ cat ~/back2school/backend/sites/default/config/staging/system.site.yml
+```
+
+You need to change the value using the following command
+
+```
+$drush7 cedit system.site
+```
+
+Using your favorite text editor you need set the same UUID present in staging config files.
+
+##### Sync configuration
+
+Is required your web server have permissions to read the configuration files, for instance if _www is the user running your webserver your must run the following commands
+
+```
+$ sudo chown -R _www ~/back2school/backend/sites/default/config/staging/
+$ sudo chmod -R 755 ~/back2school/backend/sites/default/config/staging/
+```
+
+Now with access to config files we have to option to import/sync the files
+
+*Web enable*
+
+Accessing the URL http://backend.com/admin/config/development/configuration you can review the files and import all changes
+
+*Drush enable*
+
+```
+$ drush config-import staging
+```
+
+After import you will have a complete Community Bookstore running.
+
+
+
+
 

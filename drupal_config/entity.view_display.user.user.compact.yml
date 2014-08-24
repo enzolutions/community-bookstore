@@ -1,0 +1,25 @@
+uuid: ba8a6e37-184b-4dab-be05-5bd0159de1ee
+langcode: en
+status: true
+dependencies:
+  entity:
+    - entity.view_mode.user.compact
+  module:
+    - image
+    - user
+id: user.user.compact
+label: null
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  member_for: true

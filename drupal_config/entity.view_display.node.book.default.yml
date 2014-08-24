@@ -1,0 +1,42 @@
+uuid: d8157285-af9b-461b-a244-6838700ea9e2
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.instance.node.book.body
+    - field.instance.node.book.field_cover
+    - field.instance.node.book.field_isbn
+    - node.type.book
+  module:
+    - image
+    - text
+id: node.book.default
+label: null
+targetEntityType: node
+bundle: book
+mode: default
+content:
+  field_isbn:
+    type: number_integer
+    weight: 0
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    label: above
+  field_cover:
+    type: image
+    weight: 1
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+  body:
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  langcode: true

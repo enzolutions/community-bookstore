@@ -1,0 +1,15 @@
+uuid: 1ff0236f-5cdb-4fda-ac3e-6260aeb7705c
+langcode: en
+status: true
+dependencies:
+  module:
+    - toolbar
+id: module.toolbar.wide
+label: wide
+name: wide
+mediaQuery: 'only screen and (min-width: 61em)'
+source: toolbar
+sourceType: module
+weight: 2
+multipliers:
+  1x: 1x

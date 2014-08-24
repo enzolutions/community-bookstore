@@ -1,0 +1,15 @@
+uuid: 97a14d17-3f1c-4afa-a13d-6189005abc80
+langcode: en
+status: true
+dependencies:
+  module:
+    - toolbar
+id: module.toolbar.narrow
+label: narrow
+name: narrow
+mediaQuery: 'only screen and (min-width: 16.5em)'
+source: toolbar
+sourceType: module
+weight: 0
+multipliers:
+  1x: 1x

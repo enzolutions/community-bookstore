@@ -1,0 +1,35 @@
+uuid: a2e3b6bb-d318-4863-aa32-504a6631f1d0
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.storage.node.field_cover
+    - node.type.book
+id: node.book.field_cover
+field_name: field_cover
+entity_type: node
+bundle: book
+label: Cover
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_function: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    fid: 0
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: default
+field_type: image

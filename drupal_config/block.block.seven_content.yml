@@ -1,0 +1,23 @@
+uuid: 385fc931-0807-4c0d-811c-28a8c58338e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seven
+id: seven_content
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  visibility: {  }
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
