@@ -166,7 +166,7 @@ If you are a developer we recommend install this generator to speed up the devel
 
 ###Downloading libraries
 
-Libraries itselft aren't versioned, the Frontend ise <a href="http://bower.io">Bower</a> to define required libraries, to download in enviroment that libraries execute the following command.
+Libraries itselft aren't versioned, the Frontend use <a href="http://bower.io">Bower</a> to define required libraries, to download in enviroment that libraries execute the following command.
 
 ```
 $ bower install
