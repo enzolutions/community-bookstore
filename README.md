@@ -4,6 +4,7 @@
 
 - [What is the Community Bookstore?](#what-is-the-community-bookstore)
 - [What are the objectives of Community Bookstore?](#what-are-the-objectives-of-community-bookstore)
+- [How I can contribute?](#how-i-can-contribute)
 - [What skills I need to Contribute?](#what-skills-i-need-to-contribute)
 - [What will the Community Bookstore look like?](#what-will-the-community-bookstore-look-like)
 - [Install](#install)
@@ -17,6 +18,10 @@
         - [Symlink to community bookstore config](#symlink-to-community-bookstore-config)
         - [Force Site UUID match](#force-site-uuid-match)
         - [Sync configuration](#sync-configuration-1)
+  - [Installing Frontend](#installing-frontend)
+    - [Downloading libraries](#downloading-libraries)
+    - [Common Tasks](#common-tasks)
+    - [Libraries Available](#libraries-available)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -63,7 +68,7 @@ We will assume we will have a root folder name ~/back2school to allocate backend
 We will have to domains/virtualhost configured in this way
 
 * http://backend.com -> ~/back2school/backend
-* http://frontend.com -> ~/back2school/frontend
+* http://frontend.com -> ~/back2school/frontend/web
 
 You have use the webserver of you preference, but we tested with Apache 2
 
@@ -153,7 +158,51 @@ $ drush config-import staging
 
 After import you will have a complete Community Bookstore running.
 
+##Installing Frontend
 
+The frontend was generated with Yo Marionette Drupal Generator <a href="https://github.com/enzolutions/generator-marionette-drupal">https://github.com/enzolutions/generator-marionette-drupal</a>.
 
+If you are a developer we recommend install this generator to speed up the development process if Frontend.
 
+###Downloading libraries
 
+Libraries itselft aren't versioned, the Frontend ise <a href="http://bower.io">Bower</a> to define required libraries, to download in enviroment that libraries execute the following command.
+
+```
+$ bower install
+```
+
+###Common Tasks
+
+The fronted implement common tasks using <a href="http://gruntjs.com/">Grunt</a>.
+
+Before to execute common tasks we need to install required plugin executing the folling command.
+
+```
+$ npm install
+```
+
+To get a list of common tasks available execute the following command.
+
+```
+$ grunt tasks
+```
+
+###Libraries Available
+
+The frontend use the following libraries (alphabetic order)
+
+*backbone
+*backbone-amd
+*backbone.babysitter
+*backbone.drupal
+*backbone.marionette
+*bootstrap-sass
+*backbone.wreqr
+*jquery
+*modernizr
+*requirejs
+*requirejs-text
+*twig.js
+*underscore
+*underscore-amd

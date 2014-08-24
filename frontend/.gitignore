@@ -3,4 +3,6 @@ temp
 dist
 .sass-cache
 web/vendor
+web/styles/main.css
 .tmp/
+web/js/
