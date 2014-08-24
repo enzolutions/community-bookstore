@@ -190,19 +190,19 @@ $ grunt tasks
 
 ###Libraries Available
 
-The frontend use the following libraries (alphabetic order)
+The frontend use the following libraries (alphabetic order).
 
-*backbone
-*backbone-amd
-*backbone.babysitter
-*backbone.drupal
-*backbone.marionette
-*bootstrap-sass
-*backbone.wreqr
-*jquery
-*modernizr
-*requirejs
-*requirejs-text
-*twig.js
-*underscore
-*underscore-amd
+-backbone
+-backbone-amd
+-backbone.babysitter
+-backbone.drupal
+-backbone.marionette
+-bootstrap-sass
+-backbone.wreqr
+-jquery
+-modernizr
+-requirejs
+-requirejs-text
+-twig.js
+-underscore
+-underscore-amd
