@@ -1,25 +1,25 @@
 define([
   'backbone.marionette',
   'twig',
-  'text!tmpl/main.html.twig'
+  'text!tmpl/footer.html.twig'
 ],
-function(Marionette, Twig, Main_Tmpl){
+function(Marionette, Twig, Footer_Tmpl){
     'use strict';
 
-  var MainView = Marionette.ItemView.extend({
+  var FooterView = Marionette.ItemView.extend({
     initialize: function() {
-      console.log("initialize a Main View");
+      console.log("initialize a Footer View");
     },
     template: function(data) {
       var template = Twig.twig({
-          data: Main_Tmpl
+          data: Footer_Tmpl
       });
       return template.render(data);
     }
 
-    
+
   });
 
-  return MainView;
+  return FooterView;
 
 });

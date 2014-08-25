@@ -1,6 +1,192 @@
-@import 'bootstrap-sass/lib/bootstrap';
+@import "variables";
+@import "compass/css3";
+@import "bootstrap-sass/lib/bootstrap";
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 400px;
+$fa-font-path: "../vendor/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome";
+
+body{
+  background:$beige-background;
+  color: $gray-font;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-custom{
+  background: rgba($blue-general,0.75);
+  border: none;
+  padding: 2% 0px;
+  .navbar-brand, .navbar-nav li a{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: $beige-background;
+    &:focus,
+    &:active,
+    &:hover,{
+      border-bottom: solid $beige-background 3px;
+      color: $beige-background;
+      padding-bottom:12px;
+    }
+  }
+}
+
+.blue-button{
+  background:$blue-general;
+  color: $beige-background;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  border:none;
+  border-radius:0px;
+  font-size: 20px;
+  &:hover{
+    background:$blue-general;
+    color: $beige-background;
+  }
+}
+
+#carousel-home{
+  @include box-shadow(black 2px 2px 10px);
+}
+// fade effect slider
+.carousel{
+  .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+  }
+  .item {
+    @include transition-property(opacity);
+    @include transition-duration(3s);
+  }
+  .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+  }
+  .next {
+    left:0;
+    opacity:1;
+    z-index:1;
+  }
+}
+#about-us{
+  @include box-shadow(black 2px 2px 10px);
+  background: $beige-jumbotron;
+  h2{
+    color: $blue-general;
+  }
+  p{
+    font-size: 17px;
+  }
+}
+
+#core-values{
+  h3{
+    color: $blue-general;
+  }
+}
+
+//book items
+#rated-books{
+  h2{
+    color: $blue-general;
+  }
+  .book.item{
+    img{
+      width: 100%;
+    }
+    padding: 5px;
+  }
+}
+
+//testimonials
+#testimonials{
+  @include box-shadow(black 2px 2px 10px);
+  background:url(../images/testimonials.png) no-repeat;
+  @include background-size(cover);
+  .carousel{
+    padding:5%;
+    .carousel-indicators{
+      width: 25%;
+      li{
+        background:#fff;
+        border:0px;
+        &.active{
+          background:$blue-general;
+        }
+      }
+    }
+    .user-picture{
+      position: relative;
+      width: 250px;
+      .testimonial-quotes{
+        position: absolute;
+        right: 0px;
+        z-index: 20;
+      }
+    }
+    .carousel-caption{
+      padding-left:70px;
+      right: 0px;
+      p{
+        font-size: 25px;
+      }
+      span{
+        position: absolute;
+        right: 0px;
+      }
+    }
+  }
+}
+
+//contact
+#contact{
+  input,textarea{
+    border:none;
+    border-radius:0px;
+    font-family: 'Montserrat', sans-serif;
+    @include box-shadow(black 0px 0px 5px inset);
+    font-size: 25px;
+  }
+  input{
+    height: 50px;
+  }
+}
+
+footer{
+  color: $beige-background;
+  background: $blue-general;
+  #newsletter input{
+    border-radius:0px;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    @include box-shadow(black 0px 0px 5px inset);
+    height: 50px;
+    font-size: 25px;
+  }
+  .blue-button{
+    border: solid 5px;
+  }
+  .navbar-social{
+    i{
+      color: $beige-background;
+    }
+  }
+}
+

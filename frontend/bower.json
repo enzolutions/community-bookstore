@@ -16,7 +16,8 @@
     "twig.js": "~0.7.1",
     "mocha": "~1.12.0",
     "chai": "~1.7.2",
-    "sinon": "~1.7.3"
+    "sinon": "~1.7.3",
+    "font-awesome": "~4.1.0"
   },
   "devDependencies": {},
   "directory": "vendor"
