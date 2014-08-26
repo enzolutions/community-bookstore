@@ -188,6 +188,28 @@ To get a list of common tasks available execute the following command.
 $ grunt tasks
 ```
 
+Below a list of available Grunt commands:
+
+```
+compass  -> Compile Sass to CSS using Compass
+concat   -> Concatenate files.
+default  => Alias for "concat", "uglify", "imagemin", "compass", "watch", "connect:server" tasks.
+imagemin -> Minify PNG and JPEG images
+server   => Alias for "connect:server" task.
+uglify   -> Minify files with UglifyJS.
+watch     > Run predefined tasks whenever watched files change.
+```
+
+####Web Server
+
+If you execute all tasks or just the task:
+
+```
+$ grunt server
+```
+
+You will get a web server for static pages, so you just need open in your server the URL: **http://localhost:9001** to avoid be worried about Apache, Ngix or any other webserver, so you are read to test the Community Bookstore Frotend server.
+
 ###Libraries Available
 
 The frontend use the following libraries (alphabetic order).
