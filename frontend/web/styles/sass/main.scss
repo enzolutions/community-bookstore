@@ -118,7 +118,7 @@ p{
 //testimonials
 #testimonials{
   @include box-shadow(black 2px 2px 10px);
-  background:url(../images/testimonials.png) no-repeat;
+  background:url(../images/dist/testimonials.png) no-repeat;
   @include background-size(cover);
   .carousel{
     padding:5%;
