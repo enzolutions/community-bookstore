@@ -21,6 +21,7 @@
   - [Installing Frontend](#installing-frontend)
     - [Downloading libraries](#downloading-libraries)
     - [Common Tasks](#common-tasks)
+      - [Web Server](#web-server)
     - [Libraries Available](#libraries-available)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
