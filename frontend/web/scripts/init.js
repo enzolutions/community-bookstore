@@ -13,8 +13,7 @@ require.config({
           exports: 'Backbone'
         },
         bootstrap: {
-          deps: ['jquery'],
-          exports: 'jquery'
+          deps: ['jquery']
         },
         'backbone.drupal': {
           deps: ['backbone']
@@ -23,10 +22,18 @@ require.config({
           deps: ['backbone.drupal']
         },
         main: {
-              deps: ['backbone.drupal.services']
+              deps: [
+                'backbone.drupal.services',
+                'ui_init'
+                ]
+        }
+        ui_init: {
+              deps: [
+                'bootstrap'
+                ]
         }
       },
-      paths: {
+    paths: {
         jquery: '../vendor/jquery/jquery',
         backbone: '../vendor/backbone-amd/backbone',
         underscore: '../vendor/underscore-amd/underscore',
@@ -44,8 +51,11 @@ require.config({
         /* alias the bootstrap js lib */
         bootstrap: '../vendor/bootstrap-sass/dist/js/bootstrap',
 
+        /* alias for ui init*/
+        ui_init: './ui/init',
+
         /* Alias text.js for template loading and shortcut the templates dir to tmpl */
         text: '../vendor/requirejs-text/text',
         tmpl: '../templates',
-      },
-    });
+    },
+});
