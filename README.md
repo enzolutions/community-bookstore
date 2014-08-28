@@ -73,6 +73,14 @@ We will have to domains/virtualhost configured in this way
 
 You have use the webserver of you preference, but we tested with Apache 2
 
+You have compass, grunt and bower already installed (both are npm packages):
+
+```
+sudo gem install compass
+sudo npm install -g bower
+sudo npm install -g grunt-cli
+```
+
 ##Getting Community Bookstore project
 
 ```
@@ -200,6 +208,8 @@ server   => Alias for "connect:server" task.
 uglify   -> Minify files with UglifyJS.
 watch     > Run predefined tasks whenever watched files change.
 ```
+
+It is convenient to run `grunt` alone to run the default tasks (defined at the end of the Gruntfile.js file): concat, uglify, imagemin, watch. That way we can be sure that we have the assets needed for the frontend (css generated from the scss files and images).
 
 ####Web Server
 

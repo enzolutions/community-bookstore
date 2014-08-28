@@ -20,5 +20,8 @@
     "font-awesome": "~4.1.0"
   },
   "devDependencies": {},
-  "directory": "vendor"
+  "directory": "vendor",
+  "resolutions": {
+    "underscore": ">=1.5.0"
+  }
 }
