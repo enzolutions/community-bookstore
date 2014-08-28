@@ -209,6 +209,8 @@ uglify   -> Minify files with UglifyJS.
 watch     > Run predefined tasks whenever watched files change.
 ```
 
+It is convenient to run `grunt` alone to run the default tasks (defined at the end of the Gruntfile.js file): concat, uglify, imagemin, watch. That way we can be sure that we have the assets needed for the frontend (css generated from the scss files and images).
+
 ####Web Server
 
 If you execute all tasks or just the task:
