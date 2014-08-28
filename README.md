@@ -73,6 +73,14 @@ We will have to domains/virtualhost configured in this way
 
 You have use the webserver of you preference, but we tested with Apache 2
 
+You have compass, grunt and bower already installed (both are npm packages):
+
+```
+sudo gem install compass
+sudo npm install -g bower
+sudo npm install -g grunt-cli
+```
+
 ##Getting Community Bookstore project
 
 ```
