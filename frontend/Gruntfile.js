@@ -16,7 +16,6 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         yeoman: yeomanConfig,
-        pkg: grunt.file.readJSON('package.json'),
         availabletasks: {           // task
             tasks: {
                 options: {
