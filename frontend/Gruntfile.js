@@ -2,6 +2,12 @@
 
 module.exports = function (grunt) {
 
+    // Load grunt tasks automatically
+    require('load-grunt-tasks')(grunt);
+
+    // Time how long tasks take. Can help when optimizing build times
+    require('time-grunt')(grunt);
+
     // configurable paths
     var yeomanConfig = {
         app: 'web',
@@ -10,7 +16,6 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         yeoman: yeomanConfig,
-        pkg: grunt.file.readJSON('package.json'),
         availabletasks: {           // task
             tasks: {
                 options: {
@@ -59,10 +64,14 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: [yeomanConfig.app + '/js/*.js'],
+                files: [
+                        yeomanConfig.app + '/js/*.js',
+                        yeomanConfig.app + '/scripts/*.js',
+                        ],
                 tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,
+                    livereload: true
                 },
             },
             css: {
@@ -70,33 +79,53 @@ module.exports = function (grunt) {
                 tasks: ['compass'],
                 options: {
                     spawn: false,
+                    livereload: true
                 }
+            },
+            all: {
+                files: 'index.html',
+                options: {
+                    livereload: true
+                }
+            },
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    yeomanConfig.app + '/{,*/}*.html',
+                    '.tmp/styles/{,*/}*.css',
+                    yeomanConfig.app + '/images/{,*/}*'
+                ]
             }
         },
         connect: {
-            server: {
+            options: {
+                port: 9000,
+                livereload: 35729,
+                hostname: 'localhost'
+            },
+            livereload: {
                 options: {
-                    keepalive: true,
-                    hostname: 'localhost',
-                    port: 9001,
-                    base: yeomanConfig.app
+                    open: true,
+                    base: [
+                        '.tmp',
+                        yeomanConfig.app
+                    ]
                 }
-            }
+            },
         },
     });
 
-    // Where we tell Grunt we plan to use some plug-ins.
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-available-tasks');
-
-    // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'compass', 'watch', 'connect:server']);
-    grunt.registerTask('server', ['connect:server']);
+    // // Where we tell Grunt what to do when we type "grunt" into the terminal.
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'compass', 'watch', 'connect:livereload']);
     grunt.registerTask('tasks', ['availabletasks']);
-
+    grunt.registerTask('server',[
+        'concat',
+        'uglify',
+        'imagemin',
+        'compass',
+        'connect:livereload',
+        'watch'
+    ]);
 };
