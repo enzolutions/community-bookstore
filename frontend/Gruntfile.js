@@ -64,10 +64,14 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: [yeomanConfig.app + '/js/*.js'],
+                files: [
+                        yeomanConfig.app + '/js/*.js',
+                        yeomanConfig.app + '/scripts/*.js',
+                        ],
                 tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,
+                    livereload: true
                 },
             },
             css: {
@@ -75,18 +79,41 @@ module.exports = function (grunt) {
                 tasks: ['compass'],
                 options: {
                     spawn: false,
+                    livereload: true
                 }
+            },
+            all: {
+                files: 'index.html',
+                options: {
+                    livereload: true
+                }
+            },
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    yeomanConfig.app + '/{,*/}*.html',
+                    '.tmp/styles/{,*/}*.css',
+                    yeomanConfig.app + '/images/{,*/}*'
+                ]
             }
         },
         connect: {
-            server: {
+            options: {
+                port: 9000,
+                livereload: 35729,
+                hostname: 'localhost'
+            },
+            livereload: {
                 options: {
-                    keepalive: true,
-                    hostname: 'localhost',
-                    port: 9001,
-                    base: yeomanConfig.app
+                    open: true,
+                    base: [
+                        '.tmp',
+                        yeomanConfig.app
+                    ]
                 }
-            }
+            },
         },
     });
 
