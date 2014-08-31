@@ -117,18 +117,15 @@ module.exports = function (grunt) {
         },
     });
 
-    // Where we tell Grunt we plan to use some plug-ins.
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-available-tasks');
-
-    // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'compass', 'watch', 'connect:server']);
-    grunt.registerTask('server', ['connect:server']);
+    // // Where we tell Grunt what to do when we type "grunt" into the terminal.
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'compass', 'watch', 'connect:livereload']);
     grunt.registerTask('tasks', ['availabletasks']);
-
+    grunt.registerTask('server',[
+        'concat',
+        'uglify',
+        'imagemin',
+        'compass',
+        'connect:livereload',
+        'watch'
+    ]);
 };
