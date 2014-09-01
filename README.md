@@ -73,10 +73,18 @@ We will have to domains/virtualhost configured in this way
 
 You have use the webserver of you preference, but we tested with Apache 2
 
-You have compass, grunt and bower already installed (both are npm packages):
+You need RubyGems to install Compass .
 
 ```
+\curl -sSL https://get.rvm.io | bash -s stable 
 sudo gem install compass
+```
+
+You need to install node.js to install bower and grunt
+
+```
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install nodejs
 sudo npm install -g bower
 sudo npm install -g grunt-cli
 ```
