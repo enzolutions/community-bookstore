@@ -1,7 +1,10 @@
 define([
-  'jquery'
+  'backbone',
+  'application',
+  'jquery',
+  'bootstrap'
 ],
-function($){
+function (Backbone, App, $) {
 
 	console.log('initialize a UI');
 
