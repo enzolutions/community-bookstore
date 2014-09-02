@@ -26,7 +26,7 @@ require.config({
                 'backbone.drupal.services',
                 'ui_init'
                 ]
-        }
+        },
         ui_init: {
               deps: [
                 'bootstrap'
