@@ -189,6 +189,7 @@ Before to execute common tasks we need to install required plugin executing the 
 
 ```
 $ npm install
+$ grunt
 ```
 
 To get a list of common tasks available execute the following command.
