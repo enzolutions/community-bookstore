@@ -103,6 +103,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
+                    keepalive: true,
                     open: true,
                     base: [
                         '.tmp',
@@ -123,8 +124,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-available-tasks');
 
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'compass', 'watch']);
-    grunt.registerTask('server',[
+    grunt.registerTask('default',[
         'concat',
         'uglify',
         'imagemin',
@@ -133,5 +133,6 @@ module.exports = function (grunt) {
         'watch'
     ]);
     grunt.registerTask('tasks', ['availabletasks']);
+    grunt.registerTask('server', ['connect:livereload']);
 
 };
