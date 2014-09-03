@@ -103,7 +103,6 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
-                    keepalive: true,
                     open: true,
                     base: [
                         '.tmp',
@@ -133,6 +132,6 @@ module.exports = function (grunt) {
         'watch'
     ]);
     grunt.registerTask('tasks', ['availabletasks']);
-    grunt.registerTask('server', ['connect:livereload']);
+    grunt.registerTask('server', ['connect:livereload','watch']);
 
 };
