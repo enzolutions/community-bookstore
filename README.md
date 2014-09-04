@@ -99,6 +99,13 @@ git clone --branch 8.0.x http://git.drupal.org/project/drupal.git ~/back2school/
 
 You must to follow the regular process to install a Drupal 8 site.
 
+#### Symlink to community bookstore modules contrib/custom
+
+```
+$ ln -s ~/back2school/drupal_modules_contrib  ~/back2school/backend/modules/contrib
+$ ln -s ~/back2school/drupal_modules_custom  ~/back2school/backend/modules/custom
+```
+
 #### Sync configuration
 
 After complete the Drupal 8 Installation,you must to load the configruation for Community Booksstore
@@ -189,6 +196,7 @@ Before to execute common tasks we need to install required plugin executing the 
 
 ```
 $ npm install
+$ grunt
 ```
 
 To get a list of common tasks available execute the following command.

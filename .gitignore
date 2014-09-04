@@ -1,7 +1,18 @@
 ## community-bookstore project
 #
-# Drupal 8 Backend
+
+### Drupal 8 Backend ###
 backend/
+
+### Frontend  ###
+frontend/node_modules
+frontend/temp
+frontend/dist
+frontend/.sass-cache
+frontend/web/vendor
+frontend/web/styles/main.css
+frontend/.tmp/
+frontend/web/js/
 
 ### Support for native OS files ###
 
