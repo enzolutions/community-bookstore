@@ -99,6 +99,10 @@ git clone --branch 8.0.x http://git.drupal.org/project/drupal.git ~/back2school/
 
 You must to follow the regular process to install a Drupal 8 site.
 
+#### Enable CORS
+
+For use drupal as backend, needed enable CORS, please follow these steps in https://github.com/enzolutions/backbone.drupal#cross-origin to enable
+
 #### Symlink to community bookstore modules contrib/custom
 
 ```
