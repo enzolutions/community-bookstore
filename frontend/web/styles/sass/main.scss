@@ -27,9 +27,20 @@ p{
 }
 
 .navbar-custom{
+  /* Small devices (tablets, 768px and up) */
+  @media (max-width: $screen-sm-min) {
+    background: rgba($blue-general,1);
+    padding: 1% 0px;
+  }
   background: rgba($blue-general,0.75);
   border: none;
   padding: 2% 0px;
+  @include transition-property(all);
+  @include transition-duration(0.6s);
+  &.top-nav-collapse{
+    background: rgba($blue-general,1);
+    padding: 1% 0px;
+  }
   .navbar-brand, .navbar-nav li a{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -72,7 +83,7 @@ p{
   }
   .item {
     @include transition-property(opacity);
-    @include transition-duration(3s);
+    @include transition-duration(0.6s);
   }
   .active.left {
     left:0;
