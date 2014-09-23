@@ -17,7 +17,7 @@ function(Marionette, Twig, Footer_Tmpl){
       return template.render(data);
     }
 
-
+    
   });
 
   return FooterView;

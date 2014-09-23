@@ -1,25 +1,25 @@
 define([
   'backbone.marionette',
   'twig',
-  'text!tmpl/main-menu.html.twig'
+  'text!tmpl/user.html.twig'
 ],
-function(Marionette, Twig, MainMenu_Tmpl){
+function(Marionette, Twig, User_Tmpl){
     'use strict';
 
-  var MainMenuView = Marionette.ItemView.extend({
+  var UserView = Marionette.ItemView.extend({
     initialize: function() {
-      console.log("initialize a Content View");
+      console.log("initialize a User View");
     },
     template: function(data) {
       var template = Twig.twig({
-          data: MainMenu_Tmpl
+          data: User_Tmpl
       });
       return template.render(data);
     }
 
-
+    
   });
 
-  return MainMenuView;
+  return UserView;
 
 });

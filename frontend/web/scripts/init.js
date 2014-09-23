@@ -13,7 +13,7 @@ require.config({
           exports: 'Backbone'
         },
         bootstrap: {
-          deps: ['jquery']
+          deps: ['jquery'],
         },
         'backbone.drupal': {
           deps: ['backbone']
@@ -22,26 +22,18 @@ require.config({
           deps: ['backbone.drupal']
         },
         main: {
-              deps: [
-                'backbone.drupal.services',
-                'ui_init'
-                ]
-        },
-        ui_init: {
-              deps: [
-                'bootstrap'
-                ]
+              deps: ['backbone.drupal.services']
         }
       },
-    paths: {
+      paths: {
         jquery: '../vendor/jquery/jquery',
         backbone: '../vendor/backbone-amd/backbone',
         underscore: '../vendor/underscore-amd/underscore',
 
         /* alias all marionette libs */
-        'backbone.marionette': '../vendor/backbone.marionette/lib/core/amd/backbone.marionette',
-        'backbone.wreqr': '../vendor/backbone.wreqr/lib/amd/backbone.wreqr',
-        'backbone.babysitter': '../vendor/backbone.babysitter/lib/amd/backbone.babysitter',
+        'backbone.marionette': '../vendor/backbone.marionette/lib/core/backbone.marionette',
+        'backbone.wreqr': '../vendor/backbone.wreqr/lib/backbone.wreqr',
+        'backbone.babysitter': '../vendor/backbone.babysitter/lib/backbone.babysitter',
         /* backbone.drupal */
         'backbone.drupal': '../vendor/backbone.drupal/backbone.drupal',
         'backbone.drupal.services': '../vendor/backbone.drupal/backbone.drupal.services',
@@ -51,11 +43,10 @@ require.config({
         /* alias the bootstrap js lib */
         bootstrap: '../vendor/bootstrap-sass/dist/js/bootstrap',
 
-        /* alias for ui init*/
-        ui_init: './ui/init',
-
         /* Alias text.js for template loading and shortcut the templates dir to tmpl */
         text: '../vendor/requirejs-text/text',
         tmpl: '../templates',
-    },
-});
+        action: '../actions',
+        view: '../views',
+      },
+    });
