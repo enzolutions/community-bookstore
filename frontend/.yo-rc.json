@@ -4,6 +4,44 @@
     "bowerDirectory": "vendor",
     "templatesDirectory": "web/templates",
     "modelsDirectory": "web/models",
-    "collectionsDirectory": "web/collections"
+    "collectionsDirectory": "web/collections",
+    "viewsDirectory": "web/views",
+    "actionsDirectory": "web/actions",
+    "actions": [
+      {
+        "route": "",
+        "action": "home",
+        "regions": [
+          "content",
+        ],
+        "views": [
+          "home"
+        ]
+      },
+      {
+        "route": "user",
+        "action": "user",
+        "regions": [
+          "content"
+        ],
+        "views": [
+          "user"
+        ]
+      }
+    ],
+    "regions": [
+      {
+        "name": "header",
+        "id": "#header"
+      },
+      {
+        "name": "content",
+        "id": "#content"
+      },
+      {
+        "name": "footer",
+        "id": "#footer"
+      }
+    ]
   }
 }
